@@ -11,6 +11,7 @@
 #import "ScanBarcodeViewController.h"
 #import "StudyFlashcardsViewController.h"
 #import "StudyVideoViewController.h"
+#import "ActionsViewController.h"
 
 @implementation AppDelegate
 @synthesize tabBarController;
@@ -19,18 +20,19 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-//    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-//    self.window.rootViewController = self.viewController;
-//    [self.window makeKeyAndVisible];
-//    return YES;
     
     ScanBarcodeViewController *sbVC = [[ScanBarcodeViewController alloc] initWithNibName:@"ScanBarcodeViewController" bundle:nil];
     StudyFlashcardsViewController *sfVC = [[StudyFlashcardsViewController alloc] initWithNibName:@"StudyFlashcardsViewController" bundle:nil];
     StudyVideoViewController *svVC = [[StudyVideoViewController alloc] initWithNibName:@"StudyVideoViewController" bundle:nil];
+    ActionsViewController *aVC = [[ActionsViewController alloc] initWithNibName:@"ActionsViewController" bundle:nil];
 
+    sbVC.title = @"Scan";
+    sfVC.title = @"Flashcards";
+    svVC.title = @"Video";
+    aVC.title = @"Actions";
     
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[svVC, sbVC, sfVC];
+    self.tabBarController.viewControllers = @[sbVC,svVC, sfVC,aVC];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

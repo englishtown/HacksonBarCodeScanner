@@ -29,6 +29,8 @@
 		CDC037FB171FF54E00861C07 /* StudyVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC037F9171FF54D00861C07 /* StudyVideoViewController.xib */; };
 		CDC037FF171FF56300861C07 /* StudyFlashcardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC037FD171FF56300861C07 /* StudyFlashcardsViewController.m */; };
 		CDC03800171FF56300861C07 /* StudyFlashcardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC037FE171FF56300861C07 /* StudyFlashcardsViewController.xib */; };
+		CDC03804171FFD8400861C07 /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC03802171FFD8400861C07 /* ActionsViewController.m */; };
+		CDC03805171FFD8400861C07 /* ActionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC03803171FFD8400861C07 /* ActionsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,9 @@
 		CDC037FC171FF56300861C07 /* StudyFlashcardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyFlashcardsViewController.h; sourceTree = "<group>"; };
 		CDC037FD171FF56300861C07 /* StudyFlashcardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyFlashcardsViewController.m; sourceTree = "<group>"; };
 		CDC037FE171FF56300861C07 /* StudyFlashcardsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudyFlashcardsViewController.xib; sourceTree = "<group>"; };
+		CDC03801171FFD8400861C07 /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
+		CDC03802171FFD8400861C07 /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
+		CDC03803171FFD8400861C07 /* ActionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +176,9 @@
 				CDC037FC171FF56300861C07 /* StudyFlashcardsViewController.h */,
 				CDC037FD171FF56300861C07 /* StudyFlashcardsViewController.m */,
 				CDC037FE171FF56300861C07 /* StudyFlashcardsViewController.xib */,
+				CDC03801171FFD8400861C07 /* ActionsViewController.h */,
+				CDC03802171FFD8400861C07 /* ActionsViewController.m */,
+				CDC03803171FFD8400861C07 /* ActionsViewController.xib */,
 			);
 			path = TestBarcodeScanner;
 			sourceTree = "<group>";
@@ -303,6 +311,7 @@
 				CDC0376D171FE40F00861C07 /* ScanBarcodeViewController.xib in Resources */,
 				CDC037FB171FF54E00861C07 /* StudyVideoViewController.xib in Resources */,
 				CDC03800171FF56300861C07 /* StudyFlashcardsViewController.xib in Resources */,
+				CDC03805171FFD8400861C07 /* ActionsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +327,7 @@
 				CDC0376A171FE40F00861C07 /* ScanBarcodeViewController.m in Sources */,
 				CDC037FA171FF54E00861C07 /* StudyVideoViewController.m in Sources */,
 				CDC037FF171FF56300861C07 /* StudyFlashcardsViewController.m in Sources */,
+				CDC03804171FFD8400861C07 /* ActionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
