@@ -130,13 +130,7 @@
 		CDC03744171FE40F00861C07 = {
 			isa = PBXGroup;
 			children = (
-				CDC037B8171FE87600861C07 /* QuartzCore.framework */,
-				CDC037B6171FE81500861C07 /* AudioToolbox.framework */,
-				CDC037B3171FE6FA00861C07 /* CoreVideo.framework */,
 				CDC037A0171FE6A500861C07 /* ZXingObjC.xcodeproj */,
-				CDC0378A171FE61B00861C07 /* ImageIO.framework */,
-				CDC03788171FE61300861C07 /* CoreMedia.framework */,
-				CDC03786171FE60900861C07 /* AVFoundation.framework */,
 				CDC03756171FE40F00861C07 /* TestBarcodeScanner */,
 				CDC0374F171FE40F00861C07 /* Frameworks */,
 				CDC0374E171FE40F00861C07 /* Products */,
@@ -154,6 +148,12 @@
 		CDC0374F171FE40F00861C07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDC0378A171FE61B00861C07 /* ImageIO.framework */,
+				CDC03788171FE61300861C07 /* CoreMedia.framework */,
+				CDC03786171FE60900861C07 /* AVFoundation.framework */,
+				CDC037B8171FE87600861C07 /* QuartzCore.framework */,
+				CDC037B6171FE81500861C07 /* AudioToolbox.framework */,
+				CDC037B3171FE6FA00861C07 /* CoreVideo.framework */,
 				CDC03750171FE40F00861C07 /* UIKit.framework */,
 				CDC03752171FE40F00861C07 /* Foundation.framework */,
 				CDC03754171FE40F00861C07 /* CoreGraphics.framework */,
@@ -212,9 +212,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CDC0374C171FE40F00861C07 /* TestBarcodeScanner */ = {
+		CDC0374C171FE40F00861C07 /* ScanScan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDC03770171FE40F00861C07 /* Build configuration list for PBXNativeTarget "TestBarcodeScanner" */;
+			buildConfigurationList = CDC03770171FE40F00861C07 /* Build configuration list for PBXNativeTarget "ScanScan" */;
 			buildPhases = (
 				CDC03749171FE40F00861C07 /* Sources */,
 				CDC0374A171FE40F00861C07 /* Frameworks */,
@@ -224,7 +224,7 @@
 			);
 			dependencies = (
 			);
-			name = TestBarcodeScanner;
+			name = ScanScan;
 			productName = TestBarcodeScanner;
 			productReference = CDC0374D171FE40F00861C07 /* TestBarcodeScanner.app */;
 			productType = "com.apple.product-type.application";
@@ -256,7 +256,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				CDC0374C171FE40F00861C07 /* TestBarcodeScanner */,
+				CDC0374C171FE40F00861C07 /* ScanScan */,
 			);
 		};
 /* End PBXProject section */
@@ -445,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDC03770171FE40F00861C07 /* Build configuration list for PBXNativeTarget "TestBarcodeScanner" */ = {
+		CDC03770171FE40F00861C07 /* Build configuration list for PBXNativeTarget "ScanScan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CDC03771171FE40F00861C07 /* Debug */,
