@@ -8,12 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+@class ScanBarcodeViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
-@property (strong, nonatomic) ViewController *viewController;
+@property (strong, nonatomic) ScanBarcodeViewController *viewController;
 
 @end

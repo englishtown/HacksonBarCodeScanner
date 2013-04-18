@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Shi Lin. All rights reserved.
 //
 #import <AudioToolbox/AudioToolbox.h>
-#import "ViewController.h"
+#import "ScanBarcodeViewController.h"
 #import "ZXingObjC.h"
 
-@interface ViewController ()<ZXCaptureDelegate>
+@interface ScanBarcodeViewController ()<ZXCaptureDelegate>
 @property (nonatomic, retain) ZXCapture* capture;
 @property (nonatomic, assign) IBOutlet UILabel* decodedLabel;
 
@@ -17,11 +17,24 @@
 
 @end
 
-@implementation ViewController
+@implementation ScanBarcodeViewController
 @synthesize capture,decodedLabel;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    NSLog(@"%s",__PRETTY_FUNCTION__);
+
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    return toInterfaceOrientation == UIInterfaceOrientationPortrait;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%s",__PRETTY_FUNCTION__);
     
     self.capture = [[ZXCapture alloc] init];
     self.capture.delegate = self;
@@ -33,18 +46,9 @@
     self.capture.layer.frame = self.view.bounds;
     [self.view.layer addSublayer:self.capture.layer];
     [self.view bringSubviewToFront:self.decodedLabel];
-//    self.decodedLabel.lineBreakMode = UILineBreakModeWordWrap;
     self.decodedLabel.numberOfLines = 0;
-}
+    
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
-    return toInterfaceOrientation == UIInterfaceOrientationPortrait;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning

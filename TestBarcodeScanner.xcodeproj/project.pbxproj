@@ -16,8 +16,8 @@
 		CDC03763171FE40F00861C07 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC03762171FE40F00861C07 /* Default.png */; };
 		CDC03765171FE40F00861C07 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC03764171FE40F00861C07 /* Default@2x.png */; };
 		CDC03767171FE40F00861C07 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC03766171FE40F00861C07 /* Default-568h@2x.png */; };
-		CDC0376A171FE40F00861C07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC03769171FE40F00861C07 /* ViewController.m */; };
-		CDC0376D171FE40F00861C07 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC0376B171FE40F00861C07 /* ViewController.xib */; };
+		CDC0376A171FE40F00861C07 /* ScanBarcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC03769171FE40F00861C07 /* ScanBarcodeViewController.m */; };
+		CDC0376D171FE40F00861C07 /* ScanBarcodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC0376B171FE40F00861C07 /* ScanBarcodeViewController.xib */; };
 		CDC03787171FE60900861C07 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03786171FE60900861C07 /* AVFoundation.framework */; };
 		CDC03789171FE61300861C07 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC03788171FE61300861C07 /* CoreMedia.framework */; };
 		CDC0378B171FE61B00861C07 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC0378A171FE61B00861C07 /* ImageIO.framework */; };
@@ -25,6 +25,10 @@
 		CDC037B5171FE7B900861C07 /* libZXingObjC-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC037AA171FE6A600861C07 /* libZXingObjC-iOS.a */; };
 		CDC037B7171FE81500861C07 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC037B6171FE81500861C07 /* AudioToolbox.framework */; };
 		CDC037B9171FE87600861C07 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC037B8171FE87600861C07 /* QuartzCore.framework */; };
+		CDC037FA171FF54E00861C07 /* StudyVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC037F8171FF54D00861C07 /* StudyVideoViewController.m */; };
+		CDC037FB171FF54E00861C07 /* StudyVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC037F9171FF54D00861C07 /* StudyVideoViewController.xib */; };
+		CDC037FF171FF56300861C07 /* StudyFlashcardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC037FD171FF56300861C07 /* StudyFlashcardsViewController.m */; };
+		CDC03800171FF56300861C07 /* StudyFlashcardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC037FE171FF56300861C07 /* StudyFlashcardsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,9 +83,9 @@
 		CDC03762171FE40F00861C07 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CDC03764171FE40F00861C07 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CDC03766171FE40F00861C07 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CDC03768171FE40F00861C07 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CDC03769171FE40F00861C07 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CDC0376C171FE40F00861C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CDC03768171FE40F00861C07 /* ScanBarcodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanBarcodeViewController.h; sourceTree = "<group>"; };
+		CDC03769171FE40F00861C07 /* ScanBarcodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanBarcodeViewController.m; sourceTree = "<group>"; };
+		CDC0376C171FE40F00861C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ScanBarcodeViewController.xib; sourceTree = "<group>"; };
 		CDC03786171FE60900861C07 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CDC03788171FE61300861C07 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		CDC0378A171FE61B00861C07 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -89,6 +93,12 @@
 		CDC037B3171FE6FA00861C07 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		CDC037B6171FE81500861C07 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		CDC037B8171FE87600861C07 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CDC037F7171FF54D00861C07 /* StudyVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyVideoViewController.h; sourceTree = "<group>"; };
+		CDC037F8171FF54D00861C07 /* StudyVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyVideoViewController.m; sourceTree = "<group>"; };
+		CDC037F9171FF54D00861C07 /* StudyVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudyVideoViewController.xib; sourceTree = "<group>"; };
+		CDC037FC171FF56300861C07 /* StudyFlashcardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyFlashcardsViewController.h; sourceTree = "<group>"; };
+		CDC037FD171FF56300861C07 /* StudyFlashcardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyFlashcardsViewController.m; sourceTree = "<group>"; };
+		CDC037FE171FF56300861C07 /* StudyFlashcardsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StudyFlashcardsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,10 +161,16 @@
 			children = (
 				CDC0375F171FE40F00861C07 /* AppDelegate.h */,
 				CDC03760171FE40F00861C07 /* AppDelegate.m */,
-				CDC03768171FE40F00861C07 /* ViewController.h */,
-				CDC03769171FE40F00861C07 /* ViewController.m */,
-				CDC0376B171FE40F00861C07 /* ViewController.xib */,
+				CDC03768171FE40F00861C07 /* ScanBarcodeViewController.h */,
+				CDC03769171FE40F00861C07 /* ScanBarcodeViewController.m */,
+				CDC0376B171FE40F00861C07 /* ScanBarcodeViewController.xib */,
 				CDC03757171FE40F00861C07 /* Supporting Files */,
+				CDC037F7171FF54D00861C07 /* StudyVideoViewController.h */,
+				CDC037F8171FF54D00861C07 /* StudyVideoViewController.m */,
+				CDC037F9171FF54D00861C07 /* StudyVideoViewController.xib */,
+				CDC037FC171FF56300861C07 /* StudyFlashcardsViewController.h */,
+				CDC037FD171FF56300861C07 /* StudyFlashcardsViewController.m */,
+				CDC037FE171FF56300861C07 /* StudyFlashcardsViewController.xib */,
 			);
 			path = TestBarcodeScanner;
 			sourceTree = "<group>";
@@ -284,7 +300,9 @@
 				CDC03763171FE40F00861C07 /* Default.png in Resources */,
 				CDC03765171FE40F00861C07 /* Default@2x.png in Resources */,
 				CDC03767171FE40F00861C07 /* Default-568h@2x.png in Resources */,
-				CDC0376D171FE40F00861C07 /* ViewController.xib in Resources */,
+				CDC0376D171FE40F00861C07 /* ScanBarcodeViewController.xib in Resources */,
+				CDC037FB171FF54E00861C07 /* StudyVideoViewController.xib in Resources */,
+				CDC03800171FF56300861C07 /* StudyFlashcardsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +315,9 @@
 			files = (
 				CDC0375D171FE40F00861C07 /* main.m in Sources */,
 				CDC03761171FE40F00861C07 /* AppDelegate.m in Sources */,
-				CDC0376A171FE40F00861C07 /* ViewController.m in Sources */,
+				CDC0376A171FE40F00861C07 /* ScanBarcodeViewController.m in Sources */,
+				CDC037FA171FF54E00861C07 /* StudyVideoViewController.m in Sources */,
+				CDC037FF171FF56300861C07 /* StudyFlashcardsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,12 +332,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CDC0376B171FE40F00861C07 /* ViewController.xib */ = {
+		CDC0376B171FE40F00861C07 /* ScanBarcodeViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CDC0376C171FE40F00861C07 /* en */,
 			);
-			name = ViewController.xib;
+			name = ScanBarcodeViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
